@@ -21,15 +21,15 @@ export function LoginForm({
   className,
   ...props
 }: React.ComponentProps<"div">) {
-  const api = new RPC('/api/public');
-  api.load().then();
-  useEffect(() => {
-    api.login("ali@gmail.com", "pass1233").then(
-      (res: Response)=>{
-        console.log("Login successful:", res);
-      }
-    );
-  }, []);
+  // const api = new RPC('/api/public');
+  // api.load().then();
+  // useEffect(() => {
+  //   api.login("ali@gmail.com", "pass1233").then(
+  //     (res: Response)=>{
+  //       console.log("Login successful:", res);
+  //     }
+  //   );
+  // }, []);
   return (
     <div className={cn("flex flex-col gap-6", className)} {...props}>
       <Card>
